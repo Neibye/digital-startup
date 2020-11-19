@@ -26,13 +26,13 @@
         accept="image/*"
         v-on:change="previewImage"
       />
-      <button class="choose-image" type="button" v-on:click="triggerChooseImg">
+      <button class="example_b" type="button" v-on:click="triggerChooseImg">
         Vælg billede
       </button>
       <div>
         <img :src="post.image" class="image-preview" />
       </div>
-      <button type="button" v-on:click="createPost">Opret ønske</button>
+      <button class="example_a" type="button" v-on:click="createPost">Opret ønske</button>
     </form>
   </div>
 </template>
@@ -74,9 +74,7 @@ form {
   padding: 2em 1em 2.5em;
 }
 
-button.choose-image {
-  background-color: var(--primary);
-}
+
 
 /* article button {
   text-align: center;
@@ -106,5 +104,27 @@ input[type="file"] {
   max-width: 350px;
   width: 100%;
   padding: 1em 0;
+}
+
+.example_a {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: lightblue;
+padding: 15px;
+border-radius: 5px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+margin: 1%;
+}
+
+.example_a:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="" alt="">
+    <img src="../assets/me1.png" id="mig">
     <post-list></post-list>
   </div>
 </template>
@@ -16,3 +16,11 @@ export default {
   }
 };
 </script>
+<style>
+  #mig {
+    width: 10%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+</style>

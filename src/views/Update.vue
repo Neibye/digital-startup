@@ -32,7 +32,7 @@
       <div>
         <img :src="post.image" class="image-preview" />
       </div>
-      <button type="button" v-on:click="updatePost">Opdater Ønske</button>
+      <button class="example_a" type="button" v-on:click="updatePost">Opdater Ønske</button>
     </form>
   </div>
 </template>
@@ -109,5 +109,26 @@ input[type="file"] {
   max-width: 350px;
   width: 100%;
   padding: 1em 0;
+}
+.example_a {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: lightblue;
+padding: 15px;
+border-radius: 5px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+margin: 1%;
+}
+
+.example_a:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
 }
 </style>
