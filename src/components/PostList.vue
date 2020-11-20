@@ -5,7 +5,7 @@
     <article v-for="post in posts" :key="post.id">
       <img :src="post.image" />
       <h3> {{ post.description }} </h3>
-      <p>Link: <a v-bind:href="post.link">{{ post.butik }}</a></p>
+      <p>Link: <a v-bind:href="post.link" target="_blank">{{ post.butik }}</a></p>
       <router-link :to="{ name: 'Update', params: { post: post } }">
         <button class="example_a">Opdater</button>
       </router-link>
@@ -53,6 +53,7 @@ export default {
 @media (min-width: 992px) {
   .grid-container {
     grid-template-columns: 33.33% 33.33% 33.33%;
+    row-gap: 100px;
   }
 }
 
